@@ -1,0 +1,636 @@
+/* ==========================================================================
+           HERO
+        ========================================================================== */
+
+.project-hero-img {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-hero-video {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.project-hero-video-t {
+    width: 47.5rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+.project-hero-video-t video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    font-size: 4rem;
+    margin-bottom: -2rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.project-hero-body {
+    padding: 0 var(--spacing-lg) 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.project-hero-sub {
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    color: rgba(13, 15, 43, 0.45);
+    max-width: 30rem;
+    padding-top: 0.6rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.project-hero-title {
+    font-family: var(--font-headings);
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    font-weight: var(--weight-bold);
+    letter-spacing: -3px;
+    line-height: 0.95;
+    color: #0d0f2b;
+    flex: 1;
+}
+
+
+.project-scroll-hint {
+    font-size: var(--font-size-xs);
+    color: rgba(13, 15, 43, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -1.5rem;
+}
+
+/* ==========================================================================
+           SECCIONES INTERIORES
+        ========================================================================== */
+.project-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-section-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(13, 15, 43, 0.3);
+    margin-bottom: var(--spacing-xs);
+}
+
+.project-section p {
+    font-size: var(--font-size-base);
+    line-height: 1.85;
+    color: rgba(13, 15, 43, 0.55);
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ==========================================================================
+           IMAGEN OSCURA A ANCHO COMPLETO
+        ========================================================================== */
+.project-fullimg {
+    padding: 0 var(--spacing-lg);
+}
+
+.project-fullimg img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
+/* ==========================================================================
+           PROCESO
+        ========================================================================== */
+.project-process {
+    padding: 0 var(--spacing-lg) var(--spacing-xl);
+}
+
+.process-item {
+    padding: 1.6rem 0;
+    border-top: 1px solid rgba(13, 15, 43, 0.08);
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-lg);
+}
+
+.process-item:last-child {
+    border-bottom: 1px solid rgba(13, 15, 43, 0.08);
+}
+
+.process-num {
+    font-size: var(--font-size-xs);
+    font-weight: var(--weight-semibold);
+    color: var(--color-lavender);
+    letter-spacing: 2px;
+    min-width: 1.5rem;
+}
+
+.process-name {
+    font-size: var(--font-size-sm);
+    font-weight: var(--weight-semibold);
+    color: #0d0f2b;
+    letter-spacing: -0.2px;
+    min-width: 10rem;
+}
+
+.process-desc {
+    font-size: var(--font-size-sm);
+    color: rgba(13, 15, 43, 0.4);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+           DUO DE IMÁGENES
+        ========================================================================== */
+.project-duo {
+    padding: 0 6rem 0 6rem;
+    display: flex;
+
+}
+
+.project-duo img {
+    border-radius: var(--radius-sm);
+    display: block;
+
+    object-fit: cover;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+.duo-a {
+    flex: 1.6;
+    width: 10rem;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+}
+
+
+
+.project-caption {
+    padding: 1rem var(--spacing-lg) var(--spacing-xl);
+    font-size: var(--font-size-xs);
+    color: rgba(13, 15, 43, 0.3);
+}
+
+/* ==========================================================================
+           VÍDEO
+        ========================================================================== */
+.project-video {
+    padding: 0 var(--spacing-lg) var(--spacing-xl);
+}
+
+.project-video video,
+.project-video iframe {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+
+/* ==========================================================================
+           REFLEXIÓN
+        ========================================================================== */
+.project-reflection {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    border-top: 1px solid rgba(13, 15, 43, 0.08);
+}
+
+.project-reflection-quote {
+    font-family: var(--font-headings);
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    font-weight: var(--weight-semibold);
+    letter-spacing: -0.8px;
+    line-height: 1.35;
+    color: #0d0f2b;
+    max-width: 30rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.project-reflection p {
+    font-size: var(--font-size-sm);
+    line-height: 1.85;
+    color: rgba(13, 15, 43, 0.5);
+    max-width: 34rem;
+}
+
+/* ==========================================================================
+           NAVEGACIÓN ENTRE PROYECTOS
+        ========================================================================== */
+.project-nav {
+    padding: var(--spacing-lg);
+    border-top: 1px solid rgba(13, 15, 43, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-nav-link {
+    font-size: var(--font-size-xs);
+    font-weight: var(--weight-semibold);
+    color: rgba(13, 15, 43, 0.3);
+    letter-spacing: 0.5px;
+    transition: var(--transition-smooth);
+}
+
+.project-nav-link:hover {
+    color: #0d0f2b;
+}
+
+.project-nav-link.next {
+    color: #0d0f2b;
+}
+
+.project-nav-index {
+    font-size: var(--font-size-xs);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(13, 15, 43, 0.2);
+}
+
+/* ==========================================================================
+           ROL / TAGS
+        ========================================================================== */
+.project-rol {
+    margin-top: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--color-lavender);
+}
+
+
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+
+}
+
+.project-tag {
+    font-size: var(--font-size-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.28rem 0.75rem;
+    border: 1px solid rgba(13, 15, 43, 0.15);
+    border-radius: 20px;
+    color: rgba(13, 15, 43, 0.4);
+}
+
+/* ==========================================================================
+           PÁGINA EN MODO CLARO (siempre)
+        ========================================================================== */
+body.project-page {
+    background-color: var(--color-lavender-light);
+    color: #0d0f2b;
+}
+
+/* ==========================================================================
+           RESPONSIVE
+        ========================================================================== */
+@media (max-width: 768px) {
+    .project-hero-body {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+
+    .project-hero-sub {
+        max-width: 100%;
+    }
+
+    .project-hero-title {
+        letter-spacing: -2px;
+    }
+
+    .project-hero-body h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: .8rem;
+    }
+
+    .project-hero-body .project-scroll-hint {
+        margin-top: 1rem;
+    }
+
+    .zara-cinco {
+        display: flex;
+        flex-direction: column;
+        margin-left: 9rem;
+    }
+
+
+    .project-hero-foot,
+    .project-section,
+    .project-fullimg,
+    .project-process,
+    .project-duo,
+    .project-caption,
+    .project-video,
+    .project-reflection,
+    .project-nav {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+
+    .project-duo {
+        flex-direction: column;
+    }
+
+    .duo-a,
+    .duo-b {
+        flex: none;
+        height: 240px;
+        width: 100%;
+    }
+
+    .process-item {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .process-name {
+        min-width: auto;
+    }
+}
+
+/* ==========================================================================
+   NAV SIEMPRE VISIBLE EN PÁGINA DE PROYECTO
+========================================================================== */
+.sticky-nav {
+    opacity: 1 !important;
+    pointer-events: all !important;
+    transform: translateY(0) !important;
+    background: var(--color-white) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sticky-nav-links a {
+    color: var(--color-lavender-dark) !important;
+}
+
+/* ==========================================================================
+   PANELES EXPANDIBLES
+========================================================================== */
+.project-panels {
+    display: flex;
+    height: 220px;
+    gap: 3px;
+    overflow: hidden;
+}
+
+.project-panels .panel p {
+    font-weight: 500;
+}
+
+
+.project-panels .panel {
+    flex: 1;
+    transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2rem 1.4rem;
+
+}
+
+.project-panels:hover .panel {
+    flex: 0.4;
+
+}
+
+.project-panels .panel:hover {
+    flex: 3.2;
+}
+
+.panel-1 {
+    background: #52100F;
+}
+
+.panel-2 {
+    background: #7A2415;
+}
+
+.panel-3 {
+    background: #B57138;
+}
+
+.panel-4 {
+    background: #D4A06A;
+}
+
+.panel-5 {
+    background: #FFF5E9;
+}
+
+/* ARTE */
+
+/* ARTE */
+.panel-1.art {
+    background: #252451;
+}
+
+.panel-1.art p {
+    color: #ffffff;
+}
+
+.panel-2.art {
+    background: #484379;
+}
+
+.panel-3.art {
+    background: #C6A1CF;
+}
+
+.panel-4.art {
+    background: #EADCF0;
+}
+
+.panel-5.art {
+    background: #FFFFFF;
+}
+
+.panel-5 .art {
+    background: #FFFFFF;
+}
+
+
+
+
+.panar-movil video {
+    width: 20rem;
+    margin-left: 35rem;
+}
+
+/* ==========================================================================
+   LOGO + PERSONAJE
+========================================================================== */
+.project-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    gap: var(--spacing-lg);
+}
+
+.brand-logo {
+    width: clamp(8rem, 30vw, 20rem);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-logo:hover {
+    transform: translateY(-10px);
+}
+
+
+.last {
+    margin-bottom: -5rem;
+}
+
+
+.nixen-titulo {
+    margin-top: 5rem;
+}
+
+.nixen-tag {
+    margin-bottom: -4rem;
+}
+
+.last-niksen {
+    margin-bottom: 4rem;
+    margin-top: -3rem;
+}
+
+.sdm-parentesis {
+    font-size: .6rem;
+}
+
+.eagj-titulo {
+    margin-top: 1.5rem;
+}
+
+.center-eagj {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.margin-eagj {
+    margin-top: -2rem;
+}
+
+.mk-video {
+    width: 37.5rem;
+    height: auto;
+}
+
+.margin-mk {
+    margin-top: -4rem;
+}
+
+.mk-duo {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.mk-duo video {
+    width: 35rem;
+
+}
+
+.p-mk {
+    margin-bottom: 4rem;
+}
+
+
+.zara-video {
+    width: 14rem;
+    height: auto;
+}
+
+.zara-cinco {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.zara-cinco img {
+    width: 10rem;
+
+}
+
+.bymoon-video {
+    width: 47rem;
+}
+
+.pulse-here {
+    text-decoration: underline;
+}
+
+.p-bymoon {
+    margin-top: 1rem;
+}
+
+.link-bymoon {
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-lavender);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.img-yo {
+    width: 30rem;
+    margin-top: 10rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hola {
+    color: var(--color-lavender);
+}
+
+.p-yo {
+    padding: 4rem;
+    text-align: center;
+}
+
+.pregunta-contacto {
+    margin-top: 20rem;
+    font-size: 7rem;
+    font-weight: 900;
+}

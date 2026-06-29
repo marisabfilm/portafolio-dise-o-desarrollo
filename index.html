@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisa B. — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Un solo canvas cubre toda la hero-container, sin backdrop-filter penalty */
+        #mainCanvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            will-change: transform;
+        }
+
+        /* Quitar el canvas de nebula de la card (ya no existe) */
+        .nebula-canvas {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sticky-nav" id="stickyNav">
+
+        <h1>
+            <a href="index.html">
+                <img src="svg/mb.blancopunto.svg" alt="Marisa B." id="stickyNavLogo">
+        </h1>
+        </a>
+        <div class="sticky-nav-links">
+            <a href="#proyectos">Proyectos</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+
+        </div>
+    </nav>
+
+    <header class="hero-container">
+
+        <!-- Canvas único para partículas + blobs -->
+        <canvas id="mainCanvas"></canvas>
+
+        <div class="unified-glass-card" id="glassCard">
+
+            <div class="card-header">
+                <nav class="card-nav">
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="sobre-mi.html">Sobre mí</a>
+                    <a href="contacto.html">Contacto</a>
+
+                </nav>
+            </div>
+
+            <div class="card-body-centered">
+                <div class="hero-title-mini" id="heroTitle">
+                    <img src="svg/marisab.blanco.svg" alt="Marisa B." id="heroTitleImg">
+                </div>
+
+                <p class="hero-mini-desc">Design & Development + UX/UI</p>
+
+                <p class="hero-bio">Diseño para quien quiere ser recordado. Cada proyecto nace de escuchar, pensar
+                    despacio y construir
+                    con intención — desde el primer trazo hasta la última línea de código.</p>
+
+            </div>
+
+            <div class="card-footer-simple">
+                <a href="#proyectos" class="btn-discover">Descubrir trabajos ↓</a>
+            </div>
+
+            <div class="redes-nav">
+                <a href="https://www.instagram.com/marisabfilm" target="_blank" rel="noopener">
+                    <img src="svg/instagram.svg" alt="" width="30rem">
+                </a>
+                <a href="https://www.linkedin.com/in/maríaisabelbautistafernández/" target="_blank" rel="noopener">
+                    <img src="svg/linkedin.svg" alt="" width="30rem">
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="proyectos" class="projects-section">
+
+
+
+        <!-- CATEGORÍA 01 -->
+        <div class="category-block">
+            <div class="category-label">
+                <div class="category-label-inner">
+                    <span class="category-index">01</span>
+                    <span class="category-name">Diseño Gráfico</span>
+                </div>
+                <div class="category-line"></div>
+            </div>
+
+
+            <div class="editorial-grid">
+                <a href="arte-reparador.html">
+                    <article class="editorial-card editorial-card--tall">
+                        <div class="editorial-image">
+                            <img src="svg/artereparador.recuadro.svg" alt="">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">Identidad Evento <br><em>Hospital Virgen del Rocío</em></span>
+                            <h3 class="editorial-title">El arte reparador que transforma la vida</h3>
+
+                            <a href="#" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="nixen.html">
+                    <article class="editorial-card">
+                        <div class="editorial-image">
+                            <img src="svg/niksen.recuadro.svg" alt="">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">Dossier Promoción Inmobiliaria</span>
+                            <h3 class="editorial-title">Nixen Homes Bellavista</h3>
+
+                            <a href="#" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="salirse-de-madre.html">
+                    <article class="editorial-card">
+                        <div class="editorial-image">
+                            <img src="svg/sdm.recuadro.svg" alt="">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">Packaging</span>
+                            <h3 class="editorial-title">Salirse de Madre</h3>
+
+                            <a href="#" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="eagj.html">
+                    <article class="editorial-card">
+                        <div class="editorial-image">
+                            <img src="svg/eagj.recuadro.svg" alt="">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">Folleto Estrategia Buzoneo</span>
+                            <h3 class="editorial-title">Experiencias Asequibles para Gente Joven</h3>
+
+                            <a href="#" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+        <!-- CATEGORÍA 02 -->
+        <div class="category-block m-top">
+            <div class="category-label">
+                <div class="category-label-inner">
+                    <span class="category-index">02</span>
+                    <span class="category-name">Desarrollo Web · UX/UI</span>
+                </div>
+                <div class="category-line"></div>
+            </div>
+
+
+            <div class="editorial-grid">
+                <a href="panar.html">
+                    <article class="editorial-card">
+                        <div class="editorial-image">
+                            <img src="svg/panar.recuadro.svg" alt="Panar Imagen">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">UX/UI</span>
+                            <h3 class="editorial-title">Panar</h3>
+
+                            <a href="panar.html" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="bymoon.html">
+                <article class="editorial-card editorial-card--tall">
+                    <div class="editorial-image">
+                        <img src="svg/bymoon.recuadro.svg" alt="">
+                    </div>
+                    <div class="editorial-info">
+                        <span class="editorial-tag">Desarrollo Web + UX/UI</span>
+                        <h3 class="editorial-title">BYMOON</h3>
+
+                        <a href="#" class="editorial-link">Ver proyecto →</a>
+                    </div>
+                </article>
+                </a>
+
+                <a href="merkamueble.html">
+                    <article class="editorial-card">
+                        <div class="editorial-image">
+                            <img src="svg/merkamueble.recuadro.svg" alt="">
+                        </div>
+                        <div class="editorial-info">
+                            <span class="editorial-tag">Rediseño UX/UI</span>
+                            <h3 class="editorial-title">Merkamueble</h3>
+
+                            <a href="#" class="editorial-link">Ver proyecto →</a>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="zara.html">
+                <article class="editorial-card editorial-card--tall">
+                    <div class="editorial-image">
+                        <img src="svg/zara.recuadro.svg" alt="">
+                    </div>
+                    <div class="editorial-info">
+                        <span class="editorial-tag">Rediseño UX/UI</span>
+                        <h3 class="editorial-title">Zara</h3>
+
+                        <a href="#" class="editorial-link">Ver proyecto →</a>
+                    </div>
+                </article>
+                </a>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer" id="contacto">
+        <div class="footer-contact">
+            <p class="footer-contact-label">¿Hablamos?</p>
+            <a href="mailto:marisabfilm@gmail.com" class="footer-contact-email">marisabfilm@gmail.com</a>
+            <div class="footer-contact-links">
+                <a href="https://www.instagram.com/marisabfilm" target="_blank" rel="noopener">
+                    <img src="svg/instagram.svg" alt="" width="30rem">
+                </a>
+                <a href="https://www.linkedin.com/in/maríaisabelbautistafernández/" target="_blank" rel="noopener">
+                    <img src="svg/linkedin.svg" alt="" width="30rem">
+                </a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Marisa B.</p>
+    </footer>
+
+    <script>
+        const card = document.getElementById('glassCard');
+        const mainCanvas = document.getElementById('mainCanvas');
+        const ctx = mainCanvas.getContext('2d');
+
+        let W, H;
+
+        // Redimensionar el canvas al tamaño del hero-container completo
+        function resize() {
+            const hero = document.querySelector('.hero-container');
+            const r = hero.getBoundingClientRect();
+            W = mainCanvas.width = r.width;
+            H = mainCanvas.height = r.height;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        // ── Ratón ─────────────────────────────────────────────────────────────────
+        // Un único listener en el hero-container para ambas animaciones
+        let mouse = { x: -9999, y: -9999 };
+
+        document.querySelector('.hero-container').addEventListener('mousemove', e => {
+            const r = mainCanvas.getBoundingClientRect();
+            mouse.x = e.clientX - r.left;
+            mouse.y = e.clientY - r.top;
+        });
+        document.querySelector('.hero-container').addEventListener('mouseleave', () => {
+            mouse.x = -9999;
+            mouse.y = -9999;
+        });
+
+        // ── Blobs ─────────────────────────────────────────────────────────────────
+        // Los blobs se dibujan en coordenadas relativas a la card
+        let cardOffsetX = 0, cardOffsetY = 0;
+
+        function updateCardOffset() {
+            const heroR = document.querySelector('.hero-container').getBoundingClientRect();
+            const cardR = card.getBoundingClientRect();
+            cardOffsetX = cardR.left - heroR.left;
+            cardOffsetY = cardR.top - heroR.top;
+        }
+        updateCardOffset();
+        window.addEventListener('resize', updateCardOffset);
+
+        class Blob {
+            constructor(i) {
+                this.r = 70 + Math.random() * 100;
+                this.alpha = 0.07 + Math.random() * 0.09;
+                this.alphaCur = this.alpha;
+                this.vx = (Math.random() - 0.5) * 4;
+                this.vy = (Math.random() - 0.5) * 4;
+                const cols = 3, rows = 3;
+                const col = i % cols, row = Math.floor(i / cols);
+                const BW = card.offsetWidth || 800;
+                const BH = card.offsetHeight || 600;
+                this.x = (col + 0.2 + Math.random() * 0.6) * (BW / cols);
+                this.y = (row + 0.2 + Math.random() * 0.6) * (BH / rows);
+                this.pickTarget();
+            }
+
+            pickTarget() {
+                const BW = card.offsetWidth || 800;
+                const BH = card.offsetHeight || 600;
+                const m = this.r * 0.4;
+                this.tx = m + Math.random() * (BW - m * 2);
+                this.ty = m + Math.random() * (BH - m * 2);
+                this.timer = 80 + Math.random() * 140;
+            }
+
+            update() {
+                const BW = card.offsetWidth || 800;
+                const BH = card.offsetHeight || 600;
+                if (--this.timer <= 0) this.pickTarget();
+
+                const dx = this.tx - this.x, dy = this.ty - this.y;
+                const d = Math.sqrt(dx * dx + dy * dy) || 1;
+                this.vx += (dx / d) * 0.14;
+                this.vy += (dy / d) * 0.14;
+
+                blobs.forEach(other => {
+                    if (other === this) return;
+                    const ox = this.x - other.x, oy = this.y - other.y;
+                    const od = Math.sqrt(ox * ox + oy * oy) || 1;
+                    const minDist = this.r + other.r;
+                    if (od < minDist) {
+                        const f = (1 - od / minDist) * 0.6;
+                        this.vx += (ox / od) * f;
+                        this.vy += (oy / od) * f;
+                    }
+                });
+
+                // El ratón en coordenadas de la card
+                const mx = this.x - (mouse.x - cardOffsetX);
+                const my = this.y - (mouse.y - cardOffsetY);
+                const md = Math.sqrt(mx * mx + my * my) || 1;
+                if (md < 220) {
+                    const f = (1 - md / 220) * 4.5;
+                    this.vx += (mx / md) * f;
+                    this.vy += (my / md) * f;
+                    this.alphaCur += (this.alpha * 0.15 - this.alphaCur) * 0.08;
+                } else {
+                    this.alphaCur += (this.alpha - this.alphaCur) * 0.05;
+                }
+
+                this.vx *= 0.90;
+                this.vy *= 0.90;
+
+                const spd = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+                const MAX = 5.5;
+                if (spd > MAX) { this.vx = this.vx / spd * MAX; this.vy = this.vy / spd * MAX; }
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                const m = this.r * 0.3;
+                if (this.x < m) this.vx += 0.8;
+                if (this.x > BW - m) this.vx -= 0.8;
+                if (this.y < m) this.vy += 0.8;
+                if (this.y > BH - m) this.vy -= 0.8;
+            }
+
+            draw() {
+                // Dibujar con offset para que queden dentro de la card
+                const cx = this.x + cardOffsetX;
+                const cy = this.y + cardOffsetY;
+                const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, this.r);
+                g.addColorStop(0, `rgba(255,255,255,${this.alphaCur})`);
+                g.addColorStop(0.45, `rgba(255,255,255,${this.alphaCur * 0.4})`);
+                g.addColorStop(1, 'rgba(255,255,255,0)');
+                ctx.beginPath();
+                ctx.arc(cx, cy, this.r, 0, Math.PI * 2);
+                ctx.fillStyle = g;
+                ctx.fill();
+            }
+        }
+
+        const blobs = Array.from({ length: 9 }, (_, i) => new Blob(i));
+
+        // ── Partículas ────────────────────────────────────────────────────────────
+        const COLORS = ['rgba(255,255,255,', 'rgba(142,143,198,'];
+
+        class Particle {
+            constructor() { this.reset(); }
+
+            reset() {
+                this.x = Math.random() * (W || 800);
+                this.y = Math.random() * (H || 600);
+                this.vx = (Math.random() - 0.5) * 0.4;
+                this.vy = (Math.random() - 0.5) * 0.4;
+                this.r = 0.8 + Math.random() * 1;
+                this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+                this.baseVx = this.vx;
+                this.baseVy = this.vy;
+            }
+
+            update() {
+                const dx = this.x - mouse.x;
+                const dy = this.y - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const REPULSE = 120;
+                if (dist < REPULSE && dist > 0) {
+                    const f = (1 - dist / REPULSE) * 3;
+                    this.vx += (dx / dist) * f;
+                    this.vy += (dy / dist) * f;
+                }
+
+                this.vx += (this.baseVx - this.vx) * 0.03;
+                this.vy += (this.baseVy - this.vy) * 0.03;
+
+                const spd = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+                const MAX = 4;
+                if (spd > MAX) { this.vx = this.vx / spd * MAX; this.vy = this.vy / spd * MAX; }
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0) this.x = W;
+                if (this.x > W) this.x = 0;
+                if (this.y < 0) this.y = H;
+                if (this.y > H) this.y = 0;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                ctx.fillStyle = this.color + '0.8)';
+                ctx.fill();
+            }
+        }
+
+        const particles = Array.from({ length: 50 }, () => new Particle());
+        const MAX_DIST = 100;
+        const MAX_DIST2 = MAX_DIST * MAX_DIST;
+
+        // ── Loop único ────────────────────────────────────────────────────────────
+        (function masterLoop() {
+            ctx.clearRect(0, 0, W, H);
+
+            // Blobs (dentro de la card)
+            blobs.forEach(b => { b.update(); b.draw(); });
+
+            // Líneas entre partículas
+            ctx.lineWidth = 0.8;
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const d2 = dx * dx + dy * dy;
+                    if (d2 < MAX_DIST2) {
+                        const alpha = (1 - Math.sqrt(d2) / MAX_DIST) * 0.35;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(180,180,220,${alpha})`;
+                        ctx.stroke();
+                    }
+                }
+            }
+            particles.forEach(p => { p.update(); p.draw(); });
+
+            requestAnimationFrame(masterLoop);
+        })();
+
+        // ── Vuelo del título al nav ───────────────────────────────────────────────
+        const heroTitleEl = document.getElementById('heroTitle');
+        const heroTitleImg = document.getElementById('heroTitleImg');
+        const stickyNav = document.getElementById('stickyNav');
+        const stickyLogo = document.getElementById('stickyNavLogo');
+
+        let flightDone = false;
+
+        function flyTitle() {
+            if (flightDone) return;
+            if (window.scrollY < 60) {
+                heroTitleImg.style.opacity = '1';
+                return;
+            }
+            flightDone = true;
+            const fromRect = heroTitleEl.getBoundingClientRect();
+            stickyNav.classList.add('visible');
+            requestAnimationFrame(() => {
+                const toRect = stickyLogo.getBoundingClientRect();
+                const scale = Math.min(toRect.width / fromRect.width, toRect.height / fromRect.height);
+                const clone = document.createElement('img');
+                clone.src = heroTitleImg.src;
+                clone.style.cssText = `
+                    position: fixed;
+                    top: ${fromRect.top}px;
+                    left: ${fromRect.left}px;
+                    width: ${fromRect.width}px;
+                    height: ${fromRect.height}px;
+                    transform-origin: top left;
+                    transition: transform 0.65s cubic-bezier(0.4,0,0.2,1), opacity 0.4s ease;
+                    pointer-events: none;
+                    z-index: 9999;
+                    opacity: 1;
+                `;
+                document.body.appendChild(clone);
+                heroTitleImg.style.opacity = '0';
+                const tx = toRect.left - fromRect.left;
+                const ty = toRect.top - fromRect.top + (toRect.height - fromRect.height * scale) / 2;
+                requestAnimationFrame(() => {
+                    clone.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+                    clone.style.opacity = '0';
+                });
+                clone.addEventListener('transitionend', () => {
+                    stickyLogo.classList.add('landed');
+                    clone.remove();
+                }, { once: true });
+            });
+        }
+
+        function resetFlight() {
+            if (!flightDone) return;
+            if (window.scrollY < 30) {
+                flightDone = false;
+                heroTitleImg.style.opacity = '1';
+                stickyNav.classList.remove('visible');
+                stickyLogo.classList.remove('landed');
+            }
+        }
+
+        function fadeHero() {
+            const scrollY = window.scrollY;
+            const maxScroll = 300;
+            const opacity = Math.max(0, 1 - scrollY / maxScroll);
+            card.style.opacity = opacity;
+            mainCanvas.style.opacity = opacity;
+        }
+
+        window.addEventListener('scroll', () => {
+            flyTitle();
+            resetFlight();
+            fadeHero();
+        }, { passive: true });
+
+        // ── Light mode al llegar a proyectos ─────────────────────────────────────
+        const proyectosSection = document.getElementById('proyectos');
+        const observer = new IntersectionObserver(([entry]) => {
+            document.body.classList.toggle('light-mode', entry.isIntersecting);
+        }, { threshold: 0.15 });
+        observer.observe(proyectosSection);
+    </script>
+
+</body>
+
+</html>
